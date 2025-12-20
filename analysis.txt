@@ -1,0 +1,7 @@
+This lab demonsntrates how weak and commonly used passwords can be compromised through offline password cracking attacks through external software tools such as the use of John the Ripper.
+
+Passwords based on dictionary words and simple number substitutions were cracked within seconds, highlighting how predictable some people's passwords can casue security risks.
+
+The passwords used in the lab were password123, password, 123456, summer2025, and qwerty. The passwords that were easily cracked by John the Ripper were qwerty, password, and 123456. These passwords were cracked becasue after running John in Ubuntu; it guesses the password from a wordlist and rules, (rules like adding numebrs, capitalizing letters, appending years, and trying simpler guesses first), hashes the guess, compares the guessed hash to the password'd hash, and if it matches the password's that means it cracked. The reason password123 and summer2025 were not cracked were becasue these passwords have more structure.  
+
+The experiement shows that hashing alone is insufficient if weak algorithms or poor passwords policies are used. Effective defenses include stronger hashing algorithms, salting, rate limiting, and multi factor authentication. 
